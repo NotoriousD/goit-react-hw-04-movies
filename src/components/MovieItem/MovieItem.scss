@@ -1,0 +1,33 @@
+.film {
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  img {
+    width: 100%;
+  }
+  .link__film {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .title__film {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .release__date {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}

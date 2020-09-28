@@ -1,0 +1,21 @@
+.reviews__list {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.review {
+  color: #333333;
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .descr {
+    font-size: 16px;
+  }
+}
