@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './MovieItem.scss';
 
-export const MovieItem = ({ id, title, release_date, poster_path }) => {
+const MovieItem = ({ id, title, release_date, poster_path }) => {
   return (
     <div className="film">
       <img
@@ -16,3 +17,12 @@ export const MovieItem = ({ id, title, release_date, poster_path }) => {
     </div>
   );
 };
+
+MovieItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  release_date: PropTypes.string.isRequired,
+  poster_path: PropTypes.string.isRequired,
+};
+
+export default MovieItem;

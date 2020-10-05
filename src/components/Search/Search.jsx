@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { movieAPI } from '../../api';
-import { MovieItem } from '../MovieItem/MovieItem';
+import { MovieItem } from '../MovieItem';
 import TextField from '@material-ui/core/TextField';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@material-ui/core/Button';
@@ -26,7 +26,6 @@ class Search extends Component {
           isLoading: false,
         });
       }, 300);
-      console.log(results);
     });
   };
 

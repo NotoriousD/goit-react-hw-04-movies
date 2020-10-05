@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { movieAPI } from '../../api';
-import { MovieItem } from '../MovieItem/MovieItem';
+import { MovieItem } from '../MovieItem';
 import './MoviesPage.scss';
 
 class MoviesPage extends Component {
